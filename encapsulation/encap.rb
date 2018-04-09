@@ -53,7 +53,7 @@ class User < Message
 	end
 
 	def sendSecureMessage
-		secureChat("This is confidential")
+		 secureChat("This is confidential")
 	end
 
 	def sendPersonalMessage
@@ -63,5 +63,9 @@ end
 
 
 
-client = User.new
+ client = User.new
+ msg=Message.new
+ msg.groupChat("Hi Friends")
+ client.sendPersonalMessage
+ msg.secureChat
 

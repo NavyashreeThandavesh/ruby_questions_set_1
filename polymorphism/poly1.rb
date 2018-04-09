@@ -33,3 +33,41 @@
   # Result 1
   # 2
 
+
+class Poly 
+  def play(a)
+    a.play
+  end
+#   def play1(a)
+#     a.play1
+# end
+end
+  class Addition < Poly
+    def play
+    puts "Enter a value of A"
+    @a=gets.to_i
+    puts "Enter a value of B"
+    @b=gets.to_i 
+    puts "Result"
+    puts @c=@a+@b
+  end
+  end
+  class Concat < Poly
+    def play
+    puts "Enter value of A "
+    @a=gets.to_i
+    puts "Enter value of B "
+    @b=gets.to_i
+    puts "Result"
+    puts @c= @a << @b
+  end
+  end
+  poly=Poly.new
+  puts "----Addition-----"
+  add=Addition.new
+  poly.play(add)
+  puts "----concatination-----"
+  con=Concat.new
+  poly.play(con)
+
+
