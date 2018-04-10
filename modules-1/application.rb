@@ -5,5 +5,30 @@
 # home and product objects should be able to call method authenticate_user, 
 #which should be able to display message 'User Authenticated !!' when called from home object 
 #and 'You are not authenticated!!' message when called from product object.
-module authentication
+
+
+module Authentication
+	
+	def authenticate_user
+		puts "User Authenticated!!"
+	end
+end 
+	class Application
+		extend Authentication
+	end
+	class Home < Application
+	
+		include Authentication
+
+end
+	class Product < Application
+			 extend Authentication
+		 puts "You are not Authenticated!!"
+end
+
+
+home=Home.new
+home.authenticate_user
+product=Product.new
+product.authenticate_user
 	

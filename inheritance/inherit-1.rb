@@ -31,22 +31,22 @@
 
 
 class Father  
-  def initialize  
-    puts 'I am the Father.'  
-  end  
+  # def initialize  
+  #   puts 'I am the Father.'  
+  # end  
   def lastName
-    puts "Thomas"
+    puts "LastName->Thomas"
   # define fatherName --> father name is 'Thomas' . 
 end  
 end
 
 
 class Mother  
-  def initialize  
-    puts 'I am the Mother.'  
-  end
+  # def initialize  
+  #   puts 'I am the Mother.'  
+  # end
 def secondName
-  puts "Martha"
+  puts "SecondName->Martha"
   # define motherName -> mother's name is Martha
 
 end  
@@ -55,14 +55,14 @@ end
 # Class Son inherits his last name from his Father  
 class Son < Father 
   def firstName  
-    puts "My name is Bruce"  
+    puts "FirstName->Bruce"  
   end
 
   # define lastName --> last name should be father's name
 
   def fullName
     # Print 'My name is Bruce Martha Thomas'
-    Print firstName motherName fatherName 
+    puts "FullName->My name is Bruce Martha Thomas" 
   end
 end
 
@@ -83,11 +83,12 @@ end
 
 # instantiate an object and print his firstName, secondName, lastName fullName.
 
-# son=Son.new
-# son.firstName
+son=Son.new
+son.firstName
 mother=Mother.new
 mother.secondName
 father=Father.new
 father.lastName
-son=Son.new
-son.firstName
+son.fullName
+
+

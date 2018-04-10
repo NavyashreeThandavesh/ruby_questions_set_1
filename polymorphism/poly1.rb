@@ -38,9 +38,6 @@ class Poly
   def play(a)
     a.play
   end
-#   def play1(a)
-#     a.play1
-# end
 end
   class Addition < Poly
     def play
@@ -55,13 +52,13 @@ end
   class Concat < Poly
     def play
     puts "Enter value of A "
-    @a=gets.to_i
+    a=gets.to_i
     puts "Enter value of B "
-    @b=gets.to_i
+    b=gets.to_i
     puts "Result"
-    puts @c= @a << @b
+    puts c=[a,b].join.to_i
   end
-  end
+end
   poly=Poly.new
   puts "----Addition-----"
   add=Addition.new

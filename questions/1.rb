@@ -6,4 +6,4 @@ arr= [{"name" => "john", "children" => ["a", "b","C"]},
 {"name" => "dan", "children" => ["ee", "qw"]}]
 # Give names with 2 or more children
 
-puts arr.select("children")
+arr.each {|key, value| puts "#{key} is #{value}"}

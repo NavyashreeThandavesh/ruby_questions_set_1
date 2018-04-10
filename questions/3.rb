@@ -16,4 +16,11 @@
 # Deleted file
 #        Or
 # File not found
-
+aFile = File.open("Hello.txt", "r+")
+if aFile
+   aFile.syswrite("Hi welcome to ruby prog")
+   
+else
+   puts "Unable to open file!"
+end
+# File.delete("Hello.txt")

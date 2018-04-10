@@ -3,7 +3,15 @@
 #class Addition 
  begin
  	puts "Enter first number"
- 	a=gets.to_i
+ 	a=Integer(gets)
+ 	puts "Your first number is #{a}"
  	puts "Enter second number"
- 	b=gets.to_i
+ 	b=Integer(gets)
+ 	puts "Your second number is #{b}"
  	c=a+b
+ 	puts "The result is #{c}"
+ rescue
+ 	puts "Please enter valid numbers as parameters"
+ ensure
+ 	puts "Thank You!!"
+ end
